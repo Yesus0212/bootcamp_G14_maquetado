@@ -23,6 +23,10 @@ header nav {
     overflow: hidden; /* Este atributo, siempre va casado con el float */
 }
 
+header nav ul {
+    list-style: none;
+}
+
 header nav ul li {
     float: left; /* Esto permite que los elementos de la lista, se desplacen a la izquierda */
 }
@@ -38,7 +42,6 @@ header nav ul li a {
     width: 70%;  
     float: left;  
     margin-right: 1.5%;
-    font-family: 'Lobster', cursive;
 }
 
 .articles article{
