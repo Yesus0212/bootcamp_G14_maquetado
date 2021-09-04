@@ -34,3 +34,11 @@ body {
     margin-top: 10px;
     background-color: blanchedalmond;
 }
+
+.contenedor {
+    margin: 45px 20px 10px 2px;
+    padding: 50px 50px;
+    border: 1px solid black;
+    width: 300px;
+    height: 150px;
+}

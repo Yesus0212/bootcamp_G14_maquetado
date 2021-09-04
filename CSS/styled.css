@@ -1,0 +1,79 @@
+body {
+    background-color: #e6e6e6;
+}
+
+header, section.page, footer{
+    width: 90%;
+    margin: 20px auto; /* Permite centrar correctamente el contenido */
+    max-width: 1000px;
+}
+
+header .logo-contenedor img {  
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+#aside-links { 
+    width: 200px;
+}
+
+header nav {
+    background: #528fd5;
+    overflow: hidden; /* Este atributo, siempre va casado con el float */
+}
+
+header nav ul li {
+    float: left; /* Esto permite que los elementos de la lista, se desplacen a la izquierda */
+}
+
+header nav ul li a {
+    color: white;
+    display: block; /* Nos permite cambiar la forma en la que se pinta un elemento*/
+    padding: 5px 15px;
+    text-decoration: none; /* Elimina toda la decoración de un link */
+}
+
+.articles {
+    width: 70%;  
+    float: left;  
+    margin-right: 1.5%;
+    font-family: 'Lobster', cursive;
+}
+
+.articles article{
+    background: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+aside {
+    width: 28.5%;
+    float: left;
+    background: orange;
+    border-radius: 5px;
+}
+
+aside .sidebar {
+    color: #fff;
+    padding: 30px;
+}
+
+#main-content {
+    background: #e9e9e9;
+    border: 1px solid #535353;
+    padding: 12px;
+    margin-bottom: 24px;
+}
+
+footer {
+    background: #000;
+    clear: both; /* Quita el efecto flotante en un elemento*/
+}
+
+footer .footer-content {
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+}
