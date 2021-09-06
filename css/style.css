@@ -1,0 +1,11 @@
+.logo{
+    background-repeat: no-repeat;
+    height: 28px;
+    overflow: hidden;
+    text-indent: -999px;
+    width: 39px;
+    top: 11px;
+    position: absolute;
+    left: 10px;
+    outline: 0;
+}
