@@ -4,22 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Login Mercado Libre</title>
 </head>
 <body>
-    <header class="nav-header">
-        <div class="cont-logo">
-            <a href="https://www.mercadolibre.com.mx"><img class="logo" src="/image/logo__small.png" alt="Mercado Libre"></a>            
-        </div>
+    <header>
+        <nav>
+            <a href="https://www.mercadolibre.com.mx">
+                <img class="logo" src="/image/logo__small.png" alt="Mercado Libre">
+            </a>
+        </nav>
     </header>
     
     <main>
-        <div class="arriba">
+        <div class="contenedor">
+            <div class="envoltura">
+                <div class="main">
+                    <div class="covertura"></div>
+                    <div class="cuerpo">
+                        <div class="cabeza">
+                            <h1 class="tituloCabeza">¡Hola! Ingresa tu teléfono, e‑mail o usuario</h1>
+                        </div>
+                        <form action="login">
+                            <span>Teléfono</span>
+                            <input type="email">
 
-        </div>
 
+                        </form>
+                    </div>
+                </div>
+                <div class="recaptcha">
+                    Protegido por reCAPTCHA
+                    <span class="recaptcha_links">
+                        -
+                        <a href="https://policies.google.com/privacy?hl=es-419">
+                            Privacidad
+                        </a>
+                        -
+                        <a href="https://policies.google.com/terms?hl=es-419">
+                            Condiciones
+                        </a>
+                    </span>
+
+                </div>
+            </div>
+        </div>        
     </main>
+    <footer>
+        <div>
+            <a class="login-footer_link" href="https://www.mercadolibre.com.mx/privacidad" target="">
+                Cómo cuidamos tu privacidad 
+            </a>
+        </div>
+        <div class="login-footer_copyright">
+            Copyright © 1999-2021 DeRemate.com de México S. de R.L. de C.V.
+        </div>
+    </footer>
 
 </body>
 </html>

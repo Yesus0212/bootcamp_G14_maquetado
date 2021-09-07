@@ -1,46 +1,93 @@
-.nav-header {  
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ededed;    
+    background-color: #fff;
+    font-size: 14px;
+    margin:0;    /* El background cubre todo*/
+}
+
+header {
     background-color: #fff059;
+    display: block;
+    border-bottom: 0;
+    box-shadow: none;
     border: 0;
     position: relative;
+}
+
+nav{
+    position: relative;
     display: block;
+    margin: 0 auto
+}
+
+.logo {
+    height: 28px;
+    width: 39px;
+    top: 11px;  
+    padding: 5px;
+}
+
+.contenedor {
+    height: 100%;
+    position: relative; /*Determina la posición del elemnto en el documento*/
+    box-sizing: border-box; /*calcula el ancho total de un elemento*/
+}
+
+.envoltura {
+    height: auto;
     box-sizing: border-box;
 }
 
-a{
-    background-size: 44px 31px;
-    width: 44px;
-    height: 32px;
-    top: 8px;
-    left: 10px;
+.main {
+    /*overflow: auto; especifica: si recortar contenido, dibujar barras de desplazamiento o mostrar el contenido excedente en un elemento a nivel de bloque.*/
+    box-sizing: border-box;
 }
 
-.cont-logo{
-    height: 32px;
-    width: 44px;
-}
-
-.logo{
-    width: 100%;
-    height: 100%;
-}
-
-main{
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 1.35;
-    -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: rgba(0,0,0,.1);
-}
-
-.arriba{
+.covertura {
     background-color: #fff059;
     display: block;
-    height: 11.375rem;
+    height: 11.375rem; /*Medida calculada de multiplicar 16px por los rem*/
     width: 100%;
-    position: absolute;
+    padding: 0 1.5rem;
+    text-align: left;
 }
 
-*, :after, :before {
-    -moz-box-sizing: border-box;
+.cuerpo {
+    margin: -6.875rem auto 0;
+    max-width: 26.5rem; /* Anchura máxima*/
+    min-height: 25.5625rem; /* Altura mínima*/
+    padding: 2rem 4rem;
+    border-radius: 6px;  /* Redondea las esquinas del borde exterior del elemento*/
+    background-color: #fff;
+    border-top-left-radius: 6px;  /* Establece el redondeo de la esquina superior izquierda*/
+    border-top-right-radius: 6px; /* Establece el redondeo de la esquina superior derecha*/
+    box-sizing: border-box; /*calcula el ancho total de un elemento*/
+}
+
+.cabeza {
+    margin-top: 1.5rem;
+    margin: 1.875rem 0 1.625rem;
     box-sizing: border-box;
+}
+
+.tituloCabeza{
+    font-size: 1.5rem;
+    color: rgba(0,0,0,.8);
+    font-weight: 600;
+    letter-spacing: .0125rem;
+    overflow-wrap: break-word;
+}
+
+.recaptcha {
+    margin: 1.5rem 0 5.5rem; /* Arriba, Horizontal y Abajo */
+    font-size: .75rem;
+    color: #666;
+    margin: 2rem 0 0; /* Arriba, Horizontal y Abajo */
+    text-align: center;
 }
