@@ -1,0 +1,10 @@
+/* Definir mis estilos responsivos */
+
+
+/* Estilos para mobile */
+@media (min-width:320px)  /* La propiedad @media screen se utiliza para validar la escala de la pantalla */
+and (max-width:480px) {
+    .intputEmail {
+        flex-wrap: wrap;
+    }
+}

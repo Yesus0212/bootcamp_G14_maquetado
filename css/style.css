@@ -4,6 +4,10 @@
     flex-wrap: wrap;
 }
 
+body {
+    background: black;
+}
+
 .bg{
     background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/5a27cb25-33a9-4bcc-b441-95fefabcbd37/18ac9873-558c-49b8-8ae5-eb42c9da346a/MX-es-20210823-popsignuptwoweeks-perspective_alpha_website_small.jpg);
     min-height: 43rem;
@@ -131,7 +135,7 @@
 
 .email {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: center;
 }
 
@@ -151,4 +155,16 @@ button {
     cursor: pointer;
     width: 226px;
     height: 60px;
+}
+
+.articulo {
+    position: relative;
+}
+
+.articulo h2 {
+    color: #fff;
+}
+
+.articulo h3 {
+    color: #fff;
 }
