@@ -4,7 +4,11 @@
 /* Estilos para mobile */
 @media (min-width:320px)  /* La propiedad @media screen se utiliza para validar la escala de la pantalla */
 and (max-width:480px) {
-    .intputEmail {
-        flex-wrap: wrap;
+    nav.barra {
+        padding: 15px 3px 15px 15px;
+    }
+    
+    .iconN {
+        width: 85px;
     }
 }
