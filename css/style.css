@@ -184,8 +184,6 @@ button {
 
 .animacion{
     width: 505px;
-    display: inline-block;
-    box-sizing: content-box;
 }
 
 .animacion>img{
@@ -197,13 +195,11 @@ button {
 }
 
 #video{
-    transform: scale(.5);
+    transform: scale(.8);
     position: absolute;
-    box-sizing: content-box;
-    top:0%;
-    z-index: 10;
-    width: 100%;
-    
+    top: 3.3%;
+    left: 53.5%;
+    z-index: -3;
 }
 
 .textoP {
@@ -268,4 +264,6 @@ button {
     height: 48px;
     flex-grow: 0;
 }
+
+
 
