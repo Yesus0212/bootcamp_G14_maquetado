@@ -14,6 +14,21 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;  
+    z-index: -2;
+    border-bottom: 8px solid #222; /* Borde inferior "gris" */  
+}
+
+.bg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
 }
 
 .barra {
@@ -22,20 +37,20 @@ body {
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    padding: 0 3.5rem;
+    padding: 1rem 3.5rem;
     box-sizing: border-box;
 }
 
 .logo {
     width: 8.375rem;
     height: 2.25rem;
+    align-items: center;
 }
 
 .logo {
     font-size: 3.125rem;
     fill: #e50914;
-    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
-        
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;        
 }
 
 .enlaces {
@@ -43,6 +58,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 #idiomas {
@@ -135,7 +151,7 @@ body {
 
 .email {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: wrap;
     justify-content: center;
 }
 
@@ -157,67 +173,103 @@ button {
     height: 60px;
 }
 
-.peliculas {
-    position: relative;
-    color: #fff;
+
+/* Estilos para la sección de Oferta */
+
+.contenido {
+    margin: 0%;
+    width: 100%;
+    background:black;
+    margin: 0%;
 }
 
-.peliculaA {
-    max-width: 1100px;
-    margin: 0 auto;
+.articulos {
+    padding: 40px 40px;
+    border-bottom: 8px solid #222; /* Borde inferior "gris" */
+}
+
+.articuloA {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    position: relative;
+    max-width: 1100px;    
+    margin: 0 auto;
+    flex-wrap: wrap;
 }
 
-.peliculaB {
-    max-width: 1100px;
-    margin: 0 auto;
+.articuloB {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    max-width: 1100px;    
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.animacion {
     position: relative;
+    width: 500px;
+    background: black;
 }
 
-.animacion{
-    width: 505px;
-}
-
-.animacion>img{
-    max-width: 530px;
-    box-sizing: content-box;
+#imagen{
+    position: relative;
+    max-width: 100%;
     height: auto;
-    position: relative;
-    z-index: -2;
+    border: 0;
+    z-index: 2;
+}
+
+.video {    
+    width: 100%;
+    height: 100%;
+    max-width: 94%;
+    max-height: 60%;
+    position: absolute;
+    top: 17%;
+    left: 3%;
+    z-index: 0;
 }
 
 #video{
-    transform: scale(.8);
-    position: absolute;
-    top: 3.3%;
-    left: 53.5%;
-    z-index: -3;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: baseline;
+    transform: scale(0.9);
 }
 
-.textoP {
-    width: 590px;
+.textoAnimacion {
+    position: relative;
+    padding: 0 3rem 0 0;
+    width: 50%;    
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
-.textoP>h2{
+.tituloA {
     font-size: 3.125rem;
     line-height: 1.1;
     margin-bottom: .5rem;
 }
 
-.textoP>h3{
+.infoA {
     font-size: 1.625rem;
     font-weight: 400;
 }
 
 .contenidoStranger {
+    width: 100%;
+    height: 100%;
+    max-width: 65%;
+    max-height: 20%;
+    position: absolute;
+    bottom: 10%;
+    left: 13%;
     border-radius: .75em;
     border: 2px solid rgba(255, 255, 255, .25);
     background: #000;
@@ -226,26 +278,28 @@ button {
     justify-content: space-between;
     align-items: center;
     padding: .5em .75em;
-    width: 30%;
-    position: absolute;
-    top: 70%;
-    left: 7%;
-    z-index: -1;
+    z-index: 2;
 }
 
-.contenidoStranger #things {
-    height: 4.5em;
+
+#imageThings {
+    min-width: 50px;
+    min-height: 60px;
+    max-width: 50px;
+    max-height: 60px;
+    display: inline-block;
 }
 
 .textoStranger {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-left: 1rem;
 }
 
 #titulo {
+    color: #fff;
     font-size: 20px;
     font-weight: 400;
     font-weight: bold;
@@ -260,10 +314,27 @@ button {
 
 
 .contenidoStranger #descarga {
-    min-height: 48px;
-    height: 48px;
+    width: 3em;
+    height: 3em;
+    min-height: 48px;    
     flex-grow: 0;
 }
 
+.video2 {    
+    width: 100%;
+    height: 100%;
+    max-width: 94%;
+    max-height: 60%;
+    position: absolute;
+    top: 3.3%;
+    left: 2.4%;
+    z-index: 0;
+}
 
-
+#video2 {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: baseline;
+    transform: scale(0.75);
+}

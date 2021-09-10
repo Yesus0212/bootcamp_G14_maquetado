@@ -26,8 +26,8 @@
     <title>Netflix</title>
 </head>
 <body>
-    <main>
-        <div class="bg">
+    <div class="bg">
+        <header>
             <nav class="barra">
                 <div class="logo">
                     <svg viewBox="0 0 111 30" class="svg-icon iconN" focusable="false">
@@ -46,6 +46,8 @@
                     <a href="#" id="rlogin">Iniciar sesión</a>
                 </div>         
             </nav>
+        </header>
+        <main>
             <div class="c">
                 <div class="ContenidoTitulo">
                     <h1>
@@ -72,74 +74,103 @@
                         </div>
                     </form>
                 </div>
-            </div>        
-        </div>
-        <section class="peliculas">
-            <article class="peliculaA">   
-                <div class="animacion">
-                    <img id="imagen" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="primer pelicula">
-                    <video id="video" autoplay loop muted>
-                        <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v">
-                    </video>
-                </div>          
-                <div class="textoP">   
-                    <h2>
-                        Disfruta en tu TV.
-                    </h2>
-                    <h3>
-                        Ve en smart TV, PlayStation, Xbox, Chromecast, Apple TV, reproductores de Blu-ray y más.
-                    </h3>                    
-                </div>
-            </article>
-            <article class="peliculaB">                
-                <div class="animacion">
-                    <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" alt="segunda pelicula">
-                    <div class="contenidoStranger">
-                        <img id="things" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png" alt="things">
-                        <div class="textoStranger">
-                            <span id="titulo">Stranger Things</span>
-                            <span id="descargando">Descargando...</span>
+        </main>
+    </div>
+
+        <section class="oferta">
+            <div class="contenido">
+                <div class="articulos">
+                    <article class="articuloA">
+                        <div class="animacion">
+                            <img id="imagen" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="imageArt1">
+                            <div class="video">
+                                <video id="video" autoplay loop muted>
+                                    <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v">
+                                </video>
+                            </div>                    
+                        </div>   
+                        <div class="textoAnimacion">   
+                            <h2 class="tituloA">
+                                Disfruta en tu TV.
+                            </h2>
+                            <h3 class="infoA">
+                                Ve en smart TV, PlayStation, Xbox, Chromecast, Apple TV, reproductores de Blu-ray y más.
+                            </h3>                    
                         </div>
-                        <img id="descarga" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif" alt="descarga">
-                    </div>
-                </div>
-                <div class="textoP">   
-                    <h2>
-                        Descarga tus series para verlas offline.
-                    </h2>
-                    <h3>
-                        Guarda tu contenido favorito y ten siempre algo para ver.
-                    </h3>                    
-                </div>
-            </article>
-            <article class="peliculaA"> 
-                <div class="animacion">
-                    <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png" alt="tercer pelicula">
-                </div>                               
-                <div class="textoP">   
-                    <h2>
-                        Disfruta donde quieras.
-                    </h2>
-                    <h3>
-                        Películas y series ilimitadas en tu teléfono, tablet, computadora y TV sin costo extra.
-                    </h3>                    
-                </div>
-            </article>
-            <article class="peliculaB">
-                <div class="animacion">
-                    <img src="https://occ-0-2205-116.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABeLa_an51Ptz6LMzNXnM9oDvlKl4yIJQKZJRJ9fVFPpPFK5toVuo-KytXEdqPI64KCph1OKms7nLxtCsXm_CARaR50wx.png?r=8ec" alt="cuarta pelicula">
-                </div>                                
-                <div class="textoP">   
-                    <h2>
-                        Crea perfiles para niños.
-                    </h2>
-                    <h3>
-                        Los niños vivirán aventuras con sus personajes favoritos en un espacio diseñado exclusivamente para ellos, sin costo con tu membresía.
-                    </h3>                    
-                </div>
-            </article>
+                    </article>
+                </div>                
+            </div>            
+            <div class="contenido">
+                <div class="articulos">
+                    <article class="articuloB">
+                        <div class="animacion">
+                            <img id="imagen" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" alt="imageArt2">
+                            <div class="contenidoStranger">
+                                <div id="things">
+                                    <img id="imageThings" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png" alt="things">
+                                </div>                                
+                                <div class="textoStranger">
+                                    <span id="titulo">Stranger Things</span>
+                                    <span id="descargando">Descargando...</span>
+                                </div>
+                                <div class="descarga">
+                                    <img id="descarga" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif" alt="descarga">
+                                </div>                                
+                            </div>                
+                        </div>   
+                        <div class="textoAnimacion">   
+                            <h2 class="tituloA">
+                                Descarga tus series para verlas offline.
+                            </h2>
+                            <h3 class="infoA">
+                                Guarda tu contenido favorito y ten siempre algo para ver.
+                            </h3>                    
+                        </div>
+                    </article>
+                </div>                
+            </div>
+            <div class="contenido">
+                <div class="articulos">
+                    <article class="articuloA">
+                        <div class="animacion">
+                            <img id="imagen" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png" alt="imageArt3">
+                            <div class="video2">
+                                <video id="video2" autoplay loop muted>
+                                    <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v">
+                                </video>
+                            </div>                    
+                        </div>   
+                        <div class="textoAnimacion">   
+                            <h2 class="tituloA">
+                                Disfruta donde quieras.
+                            </h2>
+                            <h3 class="infoA">
+                                Películas y series ilimitadas en tu teléfono, tablet, computadora y TV sin costo extra.
+                            </h3>                    
+                        </div>
+                    </article>
+                </div>                
+            </div>      
+            <div class="contenido">
+                <div class="articulos">
+                    <article class="articuloB">
+                        <div class="animacion">
+                            <img id="imagen" src="https://occ-0-2205-116.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABeLa_an51Ptz6LMzNXnM9oDvlKl4yIJQKZJRJ9fVFPpPFK5toVuo-KytXEdqPI64KCph1OKms7nLxtCsXm_CARaR50wx.png?r=8ec" alt="imageArt4">                            
+                        </div>   
+                        <div class="textoAnimacion">   
+                            <h2 class="tituloA">
+                                Crea perfiles para niños.
+                            </h2>
+                            <h3 class="infoA">
+                                Los niños vivirán aventuras con sus personajes favoritos en un espacio diseñado exclusivamente para ellos, sin costo con tu membresía.
+                            </h3>                    
+                        </div>
+                    </article>
+                </div>                
+            </div>     
         </section>
-        
-    </main>
     
+    <footer>
+
+    </footer>
 </body>
