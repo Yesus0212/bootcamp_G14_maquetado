@@ -36,5 +36,15 @@ and (max-width:480px) {
         font-size: 10px;
     }
 
+    .contenidoTitulo {
+        max-width: 90%;
+        padding: 0;
+    }
+
+    .contenidoTitulo h1{
+        font-size: 3.125rem;
+        max-width: 80%;
+    }
+
 
 }
