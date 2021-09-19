@@ -1,0 +1,120 @@
+* {
+  font-family: 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+.border {
+  border-radius: 5px;
+}
+
+.columna {
+  padding: 20px;
+}
+
+.colExterna {
+  padding: 0;
+}
+
+.colUno {
+  background-color: rgba(128, 0, 128, 0.24);
+}
+
+.contenido {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fila {
+  margin: 0 auto;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.nameC {
+  color: white;
+  font-size: .95rem;
+  margin: 0;
+}
+
+.name {
+  color: #242424;
+  font-size: .95rem;
+  margin: 0;
+}
+
+.status {
+  color: #717171;
+  font-size: .70rem;
+}
+
+.titleC {
+  color: white;
+  font-size: 1.30rem;
+}
+
+.title {
+  color: #242424;
+  font-size: 1.30rem;
+}
+
+.text {
+  color: #717171;
+  font-size: .90rem;
+}
+
+.colInterna {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.colInterna .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.colInterna .profile .image {
+  height: 15%;
+  width: 15%;
+}
+
+.colInterna .profile .image img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+}
+
+.colInterna .profile .data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=styles.css.map */
