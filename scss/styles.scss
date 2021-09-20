@@ -164,3 +164,44 @@
     }
 }
 
+// Contact
+
+.contentForm {
+    background-image: url(/image/form/fondo-contacto.png);
+    margin-top: 5%;
+
+    .form {
+        justify-content: center;    
+        padding: 2%;           
+        font-weight: 700;    
+        color: #e2a028 !important;    
+
+        #form {
+            color: #e2a028 !important;
+            background: white;
+            border-radius: 10px;
+            padding: 2%;
+
+            .titulo {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            .mb-3 {
+                margin: 1.50%;
+            }
+
+            .btn {
+                background-color: #e2a028;
+                border: #e2a028;
+            }
+
+
+        }
+        
+    }
+    
+}
+
+

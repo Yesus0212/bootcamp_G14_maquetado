@@ -184,4 +184,47 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
+
+.contentForm {
+  background-image: url(/image/form/fondo-contacto.png);
+  margin-top: 5%;
+}
+
+.contentForm .form {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2%;
+  font-weight: 700;
+  color: #e2a028 !important;
+}
+
+.contentForm .form #form {
+  color: #e2a028 !important;
+  background: white;
+  border-radius: 10px;
+  padding: 2%;
+}
+
+.contentForm .form #form .titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contentForm .form #form .mb-3 {
+  margin: 1.50%;
+}
+
+.contentForm .form #form .btn {
+  background-color: #e2a028;
+  border: #e2a028;
+}
 /*# sourceMappingURL=styles.css.map */
